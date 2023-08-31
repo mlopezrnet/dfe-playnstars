@@ -51,12 +51,11 @@ live-server
 
 - HTML5
 - CSS3
-- JavaScript puro (ES6)
+- JavaScript (ES6)
 
 ## Créditos
 - Imágenes tomadas de la red, crédito a quien corresponda.
 - Tipografías by Google Fonts.
-- Iconos de navegación de [FontAwesome](https://fontawesome.com).
 
 ## Uso de Imágenes con Fines Educativos
 
@@ -71,4 +70,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 ---
 
 Proyecto desarrollado por Mario López Ramonet
-Contacto: [LinkedIn](https://www.linkedin.com/in/mario-lópez-ramonet-0ba027188/
+Contacto: [LinkedIn](https://www.linkedin.com/in/mario-lópez-ramonet-0ba027188/)
