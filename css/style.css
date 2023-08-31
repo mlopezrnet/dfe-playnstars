@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+3:wght@600&display=swap');
+
+/* DEFINIMOS TEMPORALEMNTE PALETA DE COLORES, QUITAR ESTA SECCION AL FINAL */
+#PALETA_DE_COLORES {
+  color: #000 #00aeef #131c1f #2b3d4e #333 #34495e #3498db #555 #9aa0a6 #ccc #d3d3d3 #f2f2f2 #fff #ec008c #fff200 #020024 #790925 #0900ff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f5f7fa;
+  color: #00aeef;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #131c1f;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+#logo {
+  display: flex;
+  height: 54px;
+  width: auto;
+  margin: 1.5rem;
+}
+#logo > img {
+  width: auto;
+  padding: 5px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  font-size: 1.2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  display: inline-block;
+  padding: 1rem 2rem;
+  vertical-align: middle;
+}
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #00aeef;
+}
+nav a {
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+  color: #9aa0a6;
+  font-weight: 600;
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+}
+nav a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff200;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+nav a:active::before {
+  background-color: #000;
+}
+a:focus::before,
+nav a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+section {
+  scroll-margin-top: 90px;
+  padding: 45px 90px;
+}
+section > h1 {
+  font-size: 2rem;
+  color: #34495e;
+  border-bottom: 5px solid #34495e;
+  margin-bottom: 2rem;
+}
+section#top {
+  background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0, rgba(121, 9, 37, 1) 50%, rgba(9, 0, 255, 1) 100%);
+}
+section#top > h1 {
+  color: #fff;
+  border-color: #fff;
+}
+.promo {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0, rgba(102, 9, 121, 1) 35%, rgba(255, 0, 235, 1) 100%);
+}
+#home {
+  background: url(../img/bigstock-Young-people-sitting-in-multip-46563898-5616x2808.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  height: 70vh;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+.intro {
+  position: absolute;
+  bottom: 4rem;
+  right: 3rem;
+  font-size: 24px;
+  font-family: Courgette, cursive;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.movie-poster {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+.movie-info {
+  flex: 1;
+}
+.movie-info > h3 {
+  display: inline-block;
+}
+.card-container > h3 {
+  display: inline-block;
+}
+.rating {
+  display: inline-block;
+  background-color: #d3d3d3;
+  color: #000;
+  border-radius: 3px;
+  margin-left: 5px;
+  padding-inline: 3px;
+  font-size: 12px;
+}
+.star-rating {
+  color: gold;
+  font-size: 1.5rem;
+}
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.review {
+  display: flex;
+  padding: 40px;
+}
+.review-thumbnail {
+  max-width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+.review-content {
+  flex: 1;
+}
+.review-title {
+  font-weight: 700;
+}
+.review-text {
+  margin-top: 5px;
+}
+.read-more {
+  color: #ec008c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #333;
+}
+.location {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.location-name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-container {
+  display: flex;
+}
+.card {
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  background: #f5f7fa;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  border-radius: 3px;
+}
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+button.btn {
+  cursor: pointer;
+  background-color: #34495e;
+  color: #fff;
+  font-size: 1rem;
+  height: 42px;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 21px;
+  transition: color 0.5s;
+}
+button.btn:hover {
+  background-color: #ec008c;
+}
+footer {
+  background: #3498db;
+  color: #fff;
+  height: auto;
+  text-align: center;
+  padding-block: 1rem;
+}
+footer > p {
+  color: #34495e;
+}
+#btn-ir-arriba {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #34495f;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 12px 7px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+#btn-ir-arriba:hover {
+  background: #2b3d4e;
+  transform: translateY(-0.5rem);
+}
+#btn-ir-arriba svg {
+  width: 25px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3px;
+}
