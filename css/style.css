@@ -147,6 +147,7 @@ section#top > h1 {
 }
 .news-portrait {
   width: 300px;
+  height: 100%;
   margin-right: 2rem;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
   transform: scale(1.1) rotate(-3deg);
@@ -389,4 +390,57 @@ textarea {
 }
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .news-container {
+	padding-inline: 0;
+  }
+  button.btn,
+  a.button-link {
+	font-size: 0.75rem;
+  }
+  nav {
+    display: none;
+  }
+  header {
+	justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .news-container {
+	padding-inline: 0;
+	flex-direction: column;
+	justify-content: center;
+  }
+  nav {
+    display: none;
+  }
+  header {
+	justify-content: center;
+  }
+  button.btn,
+  a.button-link {
+	font-size: 0.75rem;
+  }
+  .reviews-container,
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .locations-grid {
+	padding: 0;
+  }
+  section {
+	padding: 20px 60px;
+  }
+  .star-rating {
+	font-size: 20px;
+  }
+  .contacto-container h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  }
 }
