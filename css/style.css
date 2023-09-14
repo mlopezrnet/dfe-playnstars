@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Source+Sans+3:wght@600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 /* DEFINIMOS TEMPORALEMNTE PALETA DE COLORES, QUITAR ESTA SECCION AL FINAL */
 #PALETA_DE_COLORES {
@@ -279,7 +280,8 @@ section#top > h1 {
   margin-bottom: 10px;
   color: #555;
 }
-button.btn {
+button.btn,
+a.button-link {
   cursor: pointer;
   background-color: #34495e;
   color: #fff;
@@ -291,18 +293,74 @@ button.btn {
   border-radius: 21px;
   transition: color 0.5s;
 }
-button.btn:hover {
+button.btn:hover,
+a.button-link:hover {
   background-color: #ec008c;
 }
-footer {
-  background: #3498db;
-  color: #fff;
-  height: auto;
+a.button-link {
+  display: inline;
+  padding: 10px 20px;
+  text-decoration: none;
   text-align: center;
-  padding-block: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #3498db;
+  color:white;
+  text-align: center;
+  height: 40vh;
+  padding: 6rem 3rem;
 }
 footer > p {
   color: #34495e;
+}
+.contacto-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.contacto-container button {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#contacto-form {
+  width: 600px;
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 8px;
+  border: 1px solid #f5f7fa;
+  border-radius: 3px;
+}
+.redes-sociales-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 1rem 0.5rem;
+}
+.fa-brands {
+  font-size: 2rem;
+  color: hsl(210, 29%, 29%);
+}
+.fa-brands:hover {
+  color: #ec008c;
+}
+.fa-brands:active {
+  color: #fff200;
 }
 #btn-ir-arriba {
   display: none;
@@ -328,4 +386,7 @@ footer > p {
   fill: none;
   stroke: #fff;
   stroke-width: 3px;
+}
+.hidden {
+  display: none;
 }

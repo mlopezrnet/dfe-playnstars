@@ -282,7 +282,25 @@
   </main>
 
   <footer id="footer">
-    <h3>Contáctenos | Redes sociales</h3>
+      <div class="contacto-container">
+      <h2>¿Tienes alguna pregunta o comentario?</h2>
+	  <button class="btn" id="show-contact" onclick="showContactForm()">Forma de contacto</button>
+      <form id="contacto-form" class="hidden">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+    <p>Tambien búscanos en nuestras redes</p>
+    <div class="redes-sociales-container">
+	  <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+	  <a href="#" target="_blank"><i class="fa-brands fa-reddit"></i></a>
+	  <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
     <p>Mario López Ramonet &copy; 2023</p>
   </footer>
 
